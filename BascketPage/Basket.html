@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="basket.css">
+</head>
+
+<body>
+    <div class="big_container">
+        <header>
+            <h1>Корзинка</h1>
+        </header>
+        <div id="cartItems" class="pizza-list"></div>
+        <div class="summary">
+            <div class="fr">
+                <p>Pizza Sayısı: <span id="totalItems">0 шт.</span></p>
+                <p>Toplam Hesap : <span id="totalPrice">0 ₺ </span></p>
+            </div>
+            <div class="butt">
+                <button type="button" class="mers">Вернуться назад</button>
+                <button class="pay_now">Оплатить</button>
+            </div>
+            <form id="orderForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="location">Локация:</label>
+                <input type="text" id="location" name="location" required><br><br>
+
+                <button id="sendOrder">Оплатить</button>
+                <button id="cancelOrder">Отменить</button>
+            </form>
+
+            <div id="messageContainer"></div>
+
+
+        </div>
+    </div>
+
+    <script src="./basket.js"></script>
+</body>
+
+</html>

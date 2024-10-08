@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Pizza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="wrapper">
+        <div class="wrap-left">
+          <nav class="navbar">
+            <img class="logo" src="./img/image 1 (2).png" alt="" />
+            <div class="titleDesc">
+              <p class="cafeName">REACT PIZZA</p>
+              <p class="delWorld">Самая вкусная пицца во вселенной</p>
+            </div>
+          </nav>
+        </div>
+        <div class="wrap-right">
+          <a href="./BascketPage/Basket.html">
+            <button class="mers" type="button">
+              0 ₺ |
+              <span><img src="./img/iconfinder_shopping-cart_2561279 1.svg" alt="#" /></span>0
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="filters">
+      <div class="f1">
+        <button class="button" data-filter="All">Все</button>
+        <button class="button" data-filter="Meat">Мясные</button>
+        <button class="button" data-filter="Vigtails">Вегетарианская</button>
+        <button class="button" data-filter="Gril">Гриль</button>
+        <button class="button" data-filter="Ostriy">Острые</button>
+        <button class="button" data-filter="Close">Закрытые</button>
+      </div>
+      <div class="f2">
+        <select id="sortSelect" class="select select-bordered w-full max-w-xs">
+          <option disabled selected>Сортировка по:</option>
+          <option value="popularity">Популярности</option>
+          <option value="price">Цене</option>
+          <option value="alphabet">Алфавиту</option>
+        </select>
+      </div>
+    </div>
+
+    <h1>Все пиццы</h1>
+    <div class="container">
+      <div id="pizzas" class="pizza-list"></div>
+    </div>
+  </div>
+
+  <script src="mook.js"></script>
+</body>
+
+</html>
